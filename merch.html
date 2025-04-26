@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop exclusive Apex Photography Group merchandise, including branded apparel, accessories, and fine art prints.">
+    <meta name="keywords" content="photography merchandise, branded apparel, camera gear accessories, fine art prints, Apex Photography Group shop">
+    <title>Merchandise | Apex Photography Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Inter',sans-serif}html{scroll-behavior:smooth}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.fade-in-section{opacity:0;transition:opacity .8s ease-out,transform .8s ease-out;transform:translateY(20px)}.fade-in-section.visible{opacity:1;transform:translateY(0)}.hover-lift{transition:transform .3s ease-out,box-shadow .3s ease-out,border-color .3s ease-out}.hover-lift:hover{transform:translateY(-6px);box-shadow:0 12px 20px -4px #00000026,0 4px 6px -4px #0000001a}:target::before{content:"";display:block;height:80px;margin-top:-80px;visibility:hidden}.text-shadow-lg{text-shadow:0 2px 4px #0000004d}
+        /* Merch Specific Styles (Optional) */
+        .product-card { transition: box-shadow 0.3s ease; }
+        .product-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="antialiased bg-gray-100 text-gray-800">
+
+    {/* SVG Symbol Definitions (Include shopping cart icon) */}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></symbol>
+        <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+        <symbol id="icon-vimeo" viewBox="0 0 24 24"><path d="M16.73.003C14.53.015 13.018 1.73 12.51 3.85c-.95 3.997-3.16 8.88-6.62 14.63-1.18 1.97-3.12 4.52-5.89 4.52-.19 0-.38-.03-.56-.09-.6-.2-1.01-.75-.99-1.39.03-1.14 1.89-5.9 5.43-13.63C7.4 1.1 9.03 0 10.9.003c1.45 0 2.6.4 3.4 1.2.9 1 1.1 2.5.2 4.1-.7 1.3-1.8 2.2-3.2 2.7-.1.1-1.8 1.2-1.8 1.2s2.47-6.3 2.97-8.5c.74-3.3 2.04-4.2 2.87-4.4.8-.19 1.4-.1 1.6.1.4.4.2 1.2-.3 2.4-.5 1.4-1.1 3.1-1.8 5-.7 1.9-1.5 3.8-2.4 5.6.5.5 1 .8 1.7.8 1.1 0 2.2-.9 3.3-2.6 1.4-2.3 2.6-4.9 3.5-7.8.9-2.7 1.1-4.4.6-5.1-.4-.7-1.3-1-2.4-.9z"/></symbol>
+        <symbol id="icon-phone" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></symbol>
+        <symbol id="icon-mail" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></symbol>
+        <symbol id="icon-location" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></symbol>
+        <symbol id="icon-cart" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></symbol>
+    </svg>
+
+    <header class="bg-white shadow-lg sticky top-0 z-50 w-full" id="main-header">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-gray-900 flex items-center shrink-0">Apex<span class="text-blue-600">Photo</span>Group</a>
+            <div class="hidden lg:flex space-x-7 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Home</a>
+                <div class="relative group">
+                    <a href="b2b-services.html" aria-haspopup="true" aria-expanded="false" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium focus:outline-none flex items-center">B2B Services<svg class="w-4 h-4 ml-1 text-gray-500 group-hover:text-blue-600 transition-transform duration-200 group-hover:rotate-180 fill-none stroke-current"><use xlink:href="#icon-chevron-down"></use></svg></a>
+                    <div role="menu" class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 invisible group-hover:visible z-20 origin-top-left">
+                        <div class="py-1" role="none">
+                            <a href="b2b-defence.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-t-md">Defence</a>
+                            <a href="b2b-tech.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Technology</a>
+                            <a href="b2b-industrial.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Industrial</a>
+                            <a href="b2b-aerospace.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Aerospace</a>
+                            <a href="b2b-mining.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-b-md">Mining</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="luxury-weddings.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Weddings</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Portfolio</a>
+                {/* Highlight current page */}
+                <a href="merch.html" class="text-blue-600 hover:text-blue-700 transition duration-300 font-medium">Merch</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Blog</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">About</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition duration-300 font-semibold text-sm shadow-md hover:shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Contact</a>
+            </div>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-700 focus:outline-none hover:text-blue-600 p-2 -mr-2">
+                    <svg class="w-7 h-7 fill-none stroke-current"><use xlink:href="#icon-menu"></use></svg>
+                </button>
+            </div>
+        </nav>
+        {/* Mobile Menu (Highlight current page) */}
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200 absolute top-full left-0 w-full z-40 shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Home</a>
+                <span class="block px-3 pt-3 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">B2B Services</span>
+                <a href="b2b-defence.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Defence</a>
+                <a href="b2b-tech.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Technology</a>
+                <a href="b2b-industrial.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Industrial</a>
+                <a href="b2b-aerospace.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Aerospace</a>
+                <a href="b2b-mining.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Mining</a>
+                 <span class="block px-3 pt-3 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">Other Services</span>
+                <a href="luxury-weddings.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Weddings</a>
+                <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Portfolio</a>
+                {/* Highlight current page */}
+                <a href="merch.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Merch</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Blog</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">About</a>
+                <a href="contact.html" class="block w-full mt-4 text-center bg-blue-600 text-white px-5 py-3 rounded-md hover:bg-blue-700 transition duration-300 font-semibold shadow-md hover:shadow-lg">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gray-700 py-16 md:py-24 text-white fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Apex Merch Store</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Exclusive gear, apparel, and fine art prints.</p>
+            </div>
+        </section>
+
+        <section id="merch-items" class="py-20 md:py-28 bg-white fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Featured Products</h2>
+                    <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">Browse our curated collection.</p>
+                    <span class="inline-block h-1 w-24 bg-blue-600 rounded"></span>
+                </div>
+
+                {/* Product Grid */}
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                    {/* Placeholder Product 1 */}
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                        <a href="#product-1-link" class="block hover:opacity-90 transition-opacity duration-300">
+                             <img loading="lazy" decoding="async" src="https://placehold.co/600x600/E2E8F0/475569?text=Merch+Item+1" alt="[Placeholder Product Name 1]" class="w-full h-64 object-cover" onerror="this.style.display='none';">
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                <a href="#product-1-link" class="hover:text-blue-600 transition-colors">[Placeholder Product Name 1]</a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 flex-grow">[Short description of the product - e.g., Premium Cotton T-Shirt with Logo]</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-xl font-bold text-gray-800">$[Price]</span>
+                                {/* Link to external store or product detail page */}
+                                <a href="#[Link-To-Ecommerce-Or-Detail-Page-1]" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <svg class="w-4 h-4 mr-2 fill-current"><use xlink:href="#icon-cart"></use></svg>
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Placeholder Product 2 */}
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                        <a href="#product-2-link" class="block hover:opacity-90 transition-opacity duration-300">
+                             <img loading="lazy" decoding="async" src="https://placehold.co/600x600/E2E8F0/475569?text=Merch+Item+2" alt="[Placeholder Product Name 2]" class="w-full h-64 object-cover" onerror="this.style.display='none';">
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                <a href="#product-2-link" class="hover:text-blue-600 transition-colors">[Placeholder Product Name 2]</a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 flex-grow">[Short description - e.g., Limited Edition Fine Art Print - Landscape]</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-xl font-bold text-gray-800">$[Price]</span>
+                                <a href="#[Link-To-Ecommerce-Or-Detail-Page-2]" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <svg class="w-4 h-4 mr-2 fill-current"><use xlink:href="#icon-cart"></use></svg>
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Placeholder Product 3 */}
+                     <div class="product-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                        <a href="#product-3-link" class="block hover:opacity-90 transition-opacity duration-300">
+                             <img loading="lazy" decoding="async" src="https://placehold.co/600x600/E2E8F0/475569?text=Merch+Item+3" alt="[Placeholder Product Name 3]" class="w-full h-64 object-cover" onerror="this.style.display='none';">
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                <a href="#product-3-link" class="hover:text-blue-600 transition-colors">[Placeholder Product Name 3]</a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 flex-grow">[Short description - e.g., Apex Branded Lens Cloth]</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-xl font-bold text-gray-800">$[Price]</span>
+                                <a href="#[Link-To-Ecommerce-Or-Detail-Page-3]" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <svg class="w-4 h-4 mr-2 fill-current"><use xlink:href="#icon-cart"></use></svg>
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                     {/* Placeholder Product 4 */}
+                     <div class="product-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                        <a href="#product-4-link" class="block hover:opacity-90 transition-opacity duration-300">
+                             <img loading="lazy" decoding="async" src="https://placehold.co/600x600/E2E8F0/475569?text=Merch+Item+4" alt="[Placeholder Product Name 4]" class="w-full h-64 object-cover" onerror="this.style.display='none';">
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                <a href="#product-4-link" class="hover:text-blue-600 transition-colors">[Placeholder Product Name 4]</a>
+                            </h3>
+                            <p class="text-sm text-gray-600 mb-4 flex-grow">[Short description - e.g., Embroidered Apex Cap]</p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <span class="text-xl font-bold text-gray-800">$[Price]</span>
+                                <a href="#[Link-To-Ecommerce-Or-Detail-Page-4]" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <svg class="w-4 h-4 mr-2 fill-current"><use xlink:href="#icon-cart"></use></svg>
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Add more products as needed */}
+
+                </div>
+
+                 {/* Optional: Link to full external store if applicable */}
+                 </div>
+        </section>
+
+        <section class="py-16 bg-gray-200 fade-in-section">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Have Questions?</h3>
+                 <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Contact us for inquiries about merchandise or custom orders.</p>
+                 <a href="contact.html?enquiry_type=merch" class="inline-block bg-gray-800 text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-gray-900 transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">Contact Support</a>
+            </div>
+         </section>
+
+    </main>
+
+    {/* Footer (Same as index.html) */}
+    <footer class="bg-gray-900 text-gray-400 pt-16 pb-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                {/* Footer Content Columns (Identical to index.html) */}
+                 <div class="md:col-span-2 lg:col-span-1">
+                    <h4 class="text-xl font-bold text-white mb-3">Apex<span class="text-blue-500">Photo</span>Group</h4>
+                    <p class="text-sm mb-4 leading-relaxed">Elite Visual Solutions. Adelaide Based, Nationally Focused.</p>
+                     <div class="flex space-x-4">
+                        <a href="[Link-to-LinkedIn]" aria-label="LinkedIn Profile" class="text-gray-400 hover:text-blue-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use xlink:href="#icon-linkedin"></use></svg></a>
+                        <a href="[Link-to-Instagram]" aria-label="Instagram Profile" class="text-gray-400 hover:text-pink-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-pink-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use xlink:href="#icon-instagram"></use></svg></a>
+                         <a href="[Link-to-Vimeo]" aria-label="Vimeo Profile" class="text-gray-400 hover:text-blue-300 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-300 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use xlink:href="#icon-vimeo"></use></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Home</a></li>
+                        <li><a href="b2b-services.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">B2B Services</a></li>
+                        <li><a href="luxury-weddings.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Weddings</a></li>
+                         <li><a href="merch.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Merch</a></li>
+                         <li><a href="blog.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Blog</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Portfolio</a></li>
+                        <li><a href="about.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Specializations</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="b2b-defence.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Defence</a></li>
+                        <li><a href="b2b-tech.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Technology</a></li>
+                        <li><a href="b2b-industrial.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Industrial</a></li>
+                        <li><a href="b2b-aerospace.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Aerospace</a></li>
+                        <li><a href="b2b-mining.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Mining</a></li>
+                        <li><a href="luxury-weddings.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Weddings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Get In Touch</h5>
+                    <address class="not-italic text-sm space-y-2">
+                        <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-phone"></use></svg><a href="tel:[Actual-Phone-Number]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">[Actual Phone Number]</a></p>
+                        <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-mail"></use></svg><a href="mailto:[Actual-Email-Address]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">[Actual Email Address]</a></p>
+                        <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-location"></use></svg>[Actual Street Address]<br><span class="ml-6">Adelaide, SA [Postcode]</span></p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
+                <p>© <span id="current-year"></span> Apex Photography Group. All Rights Reserved.</p>
+                <p class="mt-2"><a href="[Link-To-Privacy-Policy]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Privacy Policy</a> | <a href="[Link-To-Terms-of-Service]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    {/* Back to Top Button (Same as index.html) */}
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+        <svg class="w-5 h-5 fill-none stroke-current"><use xlink:href="#icon-arrow-up"></use></svg>
+    </button>
+
+    {/* JavaScript (Same core functionality as index.html) */}
+    <script>
+        const header=document.getElementById("main-header"),mobileMenuButton=document.getElementById("mobile-menu-button"),mobileMenuElement=document.getElementById("mobile-menu"),backToTopButton=document.getElementById("back-to-top");function debounce(t,e){let o;return function(...n){const i=()=>{clearTimeout(o),t(...n)};clearTimeout(o),o=setTimeout(i,e)}}function toggleMobileMenu(){if(!mobileMenuElement||!mobileMenuButton)return;const t=!mobileMenuElement.classList.toggle("hidden");mobileMenuButton.setAttribute("aria-expanded",String(t))}function smoothScrollToTarget(t){try{const e=document.querySelector(t);if(e){const o=header?.offsetHeight||70,n=e.getBoundingClientRect().top+window.pageYOffset,s=n-o-20;window.scrollTo({top:s,behavior:"smooth"}),mobileMenuElement&&!mobileMenuElement.classList.contains("hidden")&&toggleMobileMenu()}}catch(t){console.error(`Smooth scroll error: ${t}`)}}const handleScroll=debounce(()=>{if(!backToTopButton)return;const t=window.pageYOffset>300;backToTopButton.classList.toggle("opacity-0",!t),backToTopButton.classList.toggle("pointer-events-none",!t),backToTopButton.classList.toggle("opacity-100",t)},150);function setupIntersectionObserver(){const t=document.querySelectorAll(".fade-in-section");if(!t.length||"undefined"==typeof IntersectionObserver)return;const e=new IntersectionObserver(t=>{t.forEach(t=>{t.isIntersecting&&t.target.classList.add("visible")})},{threshold:.1});t.forEach(t=>e.observe(t))}function addEventListeners(){mobileMenuButton?.addEventListener("click",toggleMobileMenu),backToTopButton?.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"})),window.addEventListener("scroll",handleScroll),mobileMenuElement?.querySelectorAll("a").forEach(t=>{t.addEventListener("click",()=>{mobileMenuElement.classList.contains("hidden")||toggleMobileMenu()})});const t=document.getElementById("current-year");t&&(t.textContent=(new Date).getFullYear()),document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(t=>{t.addEventListener("click",function(e){const o=this.getAttribute("href");o&&o.startsWith("#")&&(e.preventDefault(),smoothScrollToTarget(o))})})}function init(){addEventListeners(),setupIntersectionObserver(),handleScroll()}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",init):init();
+    </script>
+
+</body>
+</html>
