@@ -50,47 +50,36 @@
 </head>
 <body class="antialiased bg-gray-100 text-gray-800">
 
-    {/* --- SVG Symbol Definitions --- */}
-    {/* This block defines reusable SVG icons. They are hidden by default and referenced by their ID later. */}
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        {/* Navigation Icons */}
         <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></symbol>
         <symbol id="icon-menu" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></symbol>
         <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></symbol>
 
-        {/* Social Media Icons */}
         <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
         <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
         <symbol id="icon-vimeo" viewBox="0 0 24 24"><path d="M16.73.003C14.53.015 13.018 1.73 12.51 3.85c-.95 3.997-3.16 8.88-6.62 14.63-1.18 1.97-3.12 4.52-5.89 4.52-.19 0-.38-.03-.56-.09-.6-.2-1.01-.75-.99-1.39.03-1.14 1.89-5.9 5.43-13.63C7.4 1.1 9.03 0 10.9.003c1.45 0 2.6.4 3.4 1.2.9 1 1.1 2.5.2 4.1-.7 1.3-1.8 2.2-3.2 2.7-.1.1-1.8 1.2-1.8 1.2s2.47-6.3 2.97-8.5c.74-3.3 2.04-4.2 2.87-4.4.8-.19 1.4-.1 1.6.1.4.4.2 1.2-.3 2.4-.5 1.4-1.1 3.1-1.8 5-.7 1.9-1.5 3.8-2.4 5.6.5.5 1 .8 1.7.8 1.1 0 2.2-.9 3.3-2.6 1.4-2.3 2.6-4.9 3.5-7.8.9-2.7 1.1-4.4.6-5.1-.4-.7-1.3-1-2.4-.9z"/></symbol>
 
-        {/* Contact Icons */}
         <symbol id="icon-phone" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></symbol>
         <symbol id="icon-mail" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></symbol>
         <symbol id="icon-location" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></symbol>
 
-        {/* Core Values Icons */}
         <symbol id="icon-star" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></symbol>
         <symbol id="icon-users" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0115 11a5 5 0 011 9.9M9 11a5 5 0 00-4.93 4.4A6.97 6.97 0 009 16.93c.216.024.437.04.658.058A5 5 0 019 11z" /></symbol>
         <symbol id="icon-shield-check" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.002L10 18.451l7.834-13.449A11.954 11.954 0 0110 1.944zM9 13l-3-3 1.41-1.41L9 10.17l4.59-4.59L15 7l-6 6z" clip-rule="evenodd" /></symbol>
         <symbol id="icon-light-bulb" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.017a4.98 4.98 0 014.836 4.484l.003.018.01.052a4.5 4.5 0 01-1.84 5.073 4.502 4.502 0 01-6.018 0 4.5 4.5 0 01-1.84-5.073l.01-.052.004-.018A4.98 4.98 0 019 4.017V3a1 1 0 011-1zm0 8a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM10 18a.5.5 0 01-.5-.5v-1a.5.5 0 011 0v1a.5.5 0 01-.5.5zM6 17a.5.5 0 01-.354-.146l-.707-.707a.5.5 0 01.707-.707l.707.707A.5.5 0 016 17zm8 0a.5.5 0 01-.354.146l-.707-.707a.5.5 0 01.707-.707l.707.707A.5.5 0 0114 17z" clip-rule="evenodd" /></symbol>
         <symbol id="icon-check-circle" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></symbol>
     </svg>
-    {/* --- End SVG Symbol Definitions --- */}
 
-    {/* --- Header Section --- */}
     <header class="bg-white shadow-lg sticky top-0 z-50 w-full" id="main-header">
         <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-            {/* Logo */}
             <a href="index.html" class="text-3xl font-bold text-gray-900 flex items-center shrink-0">Apex<span class="text-blue-600">Photo</span>Group</a>
 
-            {/* Desktop Navigation */}
             <div class="hidden lg:flex space-x-7 items-center">
                 <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Home</a>
-                {/* B2B Services Dropdown */}
                 <div class="relative group">
                     <a href="b2b-services.html" aria-haspopup="true" aria-expanded="false" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium focus:outline-none flex items-center">
                         B2B Services
-                        <svg class="w-4 h-4 ml-1 text-gray-500 group-hover:text-blue-600 transition-transform duration-200 group-hover:rotate-180 fill-none stroke-current"><use href="#icon-chevron-down"></use></svg> {/* Updated href */}
+                        <svg class="w-4 h-4 ml-1 text-gray-500 group-hover:text-blue-600 transition-transform duration-200 group-hover:rotate-180 fill-none stroke-current"><use href="#icon-chevron-down"></use></svg> 
                     </a>
                     <div role="menu" class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 invisible group-hover:visible z-20 origin-top-left">
                         <div class="py-1" role="none">
@@ -110,15 +99,13 @@
                 <a href="contact.html" class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition duration-300 font-semibold text-sm shadow-md hover:shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Contact</a>
             </div>
 
-            {/* Mobile Menu Button */}
             <div class="lg:hidden">
                 <button id="mobile-menu-button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-700 focus:outline-none hover:text-blue-600 p-2 -mr-2">
-                    <svg class="w-7 h-7 fill-none stroke-current"><use href="#icon-menu"></use></svg> {/* Updated href */}
+                    <svg class="w-7 h-7 fill-none stroke-current"><use href="#icon-menu"></use></svg> 
                 </button>
             </div>
         </nav>
 
-        {/* Mobile Menu Panel */}
         <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200 absolute top-full left-0 w-full z-40 shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Home</a>
@@ -138,12 +125,9 @@
             </div>
         </div>
     </header>
-    {/* --- End Header Section --- */}
 
     <main>
-        {/* --- Hero Section --- */}
         <section class="relative bg-gradient-to-r from-gray-800 to-gray-700 text-white py-24 md:py-32 fade-in-section">
-            {/* Optional subtle background image */}
              <div class="absolute inset-0 opacity-10">
                  <img src="https://placehold.co/1920x400/374151/EBF8FF?text=Subtle+Background" alt="Abstract background for hero section" class="w-full h-full object-cover" onerror="this.style.display='none';">
              </div>
@@ -152,25 +136,19 @@
                 <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Driving value through elite visual solutions across Australia.</p>
             </div>
         </section>
-        {/* --- End Hero Section --- */}
 
-        {/* --- Our Story Section --- */}
         <section id="our-story" class="py-20 md:py-28 bg-white fade-in-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    {/* Image Column */}
                     <div class="order-1">
                          <img loading="lazy" decoding="async" src="https://placehold.co/800x650/FFFFFF/1F2937?text=Our+Story+Image" alt="A representative image of the Apex Photography Group team or their work" class="rounded-xl shadow-xl w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x650/E5E7EB/4B5563?text=Image+Unavailable';">
                     </div>
-                    {/* Text Column */}
                     <div class="order-2 text-center lg:text-left">
                         <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">Who We Are</span>
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-6 text-gray-900">More Than Just Photographers</h2>
-                        {/* Mission Statement */}
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                             Apex Photography Group captures Australia's critical industries and unforgettable moments. We provide elite, compliant visual solutions for B2B leaders in Defence, Technology, and Industry, while crafting timeless, artistic narratives for luxury weddings. Based in Adelaide, our national reach delivers specialized expertise and exceptional quality.
                         </p>
-                        {/* Additional Context */}
                         <p class="text-gray-700 mb-6 leading-relaxed">
                             Founded on the principles of technical excellence, creative vision, and unwavering client focus, Apex Photography Group partners with leading organizations and discerning individuals to create visual assets that deliver tangible results and capture unforgettable moments.
                         </p>
@@ -181,63 +159,53 @@
                 </div>
             </div>
         </section>
-        {/* --- End Our Story Section --- */}
 
-        {/* --- Our Core Values Section --- */}
         <section id="our-values" class="py-20 md:py-24 bg-gray-50 fade-in-section">
             <div class="container mx-auto px-4 sm:px-6">
-                {/* Section Header */}
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Core Values</h2>
                     <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed">The principles that guide our work and client relationships.</p>
                     <span class="inline-block h-1 w-24 bg-blue-600 rounded"></span>
                 </div>
-                {/* Values Grid */}
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {/* Value 1: Uncompromising Quality */}
                     <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                         <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                             <svg class="w-8 h-8 fill-current"><use href="#icon-star"></use></svg> {/* Updated href */}
+                             <svg class="w-8 h-8 fill-current"><use href="#icon-star"></use></svg> 
                         </div>
                         <h3 class="text-xl font-semibold mb-3 text-gray-800">Uncompromising Quality</h3>
                         <p class="text-gray-600 text-sm">Our commitment to exceptional visuals is absolute, reflected in our high-level technical skill, investment in state-of-the-art equipment, and meticulous editing processes.</p>
                     </div>
-                    {/* Value 2: Client Partnership */}
                      <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                          <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                             <svg class="w-8 h-8 fill-current"><use href="#icon-users"></use></svg> {/* Updated href */}
+                             <svg class="w-8 h-8 fill-current"><use href="#icon-users"></use></svg> 
                          </div>
                          <h3 class="text-xl font-semibold mb-3 text-gray-800">Client Partnership</h3>
                          <p class="text-gray-600 text-sm">We prioritize understanding your unique goals, fostering a collaborative approach through clear communication, and striving to exceed expectations in every project.</p>
                      </div>
-                    {/* Value 3: Integrity & Reliability */}
                      <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                          <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                             <svg class="w-8 h-8 fill-current"><use href="#icon-shield-check"></use></svg> {/* Updated href */}
+                             <svg class="w-8 h-8 fill-current"><use href="#icon-shield-check"></use></svg> 
                          </div>
                          <h3 class="text-xl font-semibold mb-3 text-gray-800">Integrity & Reliability</h3>
                          <p class="text-gray-600 text-sm">Our foundation is built on unwavering professionalism, absolute discretion (vital for sensitive B2B/Defence projects), adherence to deadlines, and earning your complete trust.</p>
                      </div>
-                    {/* Value 4: Creative Vision */}
                      <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                          <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                             <svg class="w-8 h-8 fill-current"><use href="#icon-light-bulb"></use></svg> {/* Updated href */}
+                             <svg class="w-8 h-8 fill-current"><use href="#icon-light-bulb"></use></svg> 
                          </div>
                          <h3 class="text-xl font-semibold mb-3 text-gray-800">Creative Vision</h3>
                          <p class="text-gray-600 text-sm">We bring an artistic approach and unique perspectives to every project, excelling in visual storytelling while adapting our skills to meet diverse client needs.</p>
                      </div>
-                    {/* Value 5: Safety Conscious */}
                      <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                          <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                              <svg class="w-8 h-8 fill-current"><use href="#icon-check-circle"></use></svg> {/* Updated href */}
+                              <svg class="w-8 h-8 fill-current"><use href="#icon-check-circle"></use></svg> 
                          </div>
                          <h3 class="text-xl font-semibold mb-3 text-gray-800">Safety Conscious</h3>
                          <p class="text-gray-600 text-sm">We maintain rigorous adherence to all WHS/OH&S standards, site-specific protocols, and risk assessments – non-negotiable elements, especially within demanding industrial and defence environments.</p>
                      </div>
-                    {/* Value 6: Nationally Focused */}
                      <div class="text-center p-6 hover-lift border border-transparent rounded-lg">
                          <div class="inline-flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-blue-100 text-blue-600">
-                              <svg class="w-8 h-8 fill-current"><use href="#icon-location"></use></svg> {/* Updated href */}
+                              <svg class="w-8 h-8 fill-current"><use href="#icon-location"></use></svg> 
                          </div>
                          <h3 class="text-xl font-semibold mb-3 text-gray-800">Nationally Focused</h3>
                          <p class="text-gray-600 text-sm">While based in Adelaide, we possess the logistical capabilities and strategic approach to operate seamlessly across Australia, understanding and serving diverse client needs nationwide.</p>
@@ -245,95 +213,74 @@
                 </div>
             </div>
         </section>
-        {/* --- End Our Core Values Section --- */}
 
-        {/* --- Meet the Team Section --- */}
         <section id="meet-the-team" class="py-20 md:py-28 bg-white fade-in-section">
             <div class="container mx-auto px-4 sm:px-6">
-                {/* Section Header */}
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Meet the Team</h2>
                     <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed">The experienced professionals behind Apex Photography Group.</p>
                     <span class="inline-block h-1 w-24 bg-blue-600 rounded"></span>
                 </div>
-                {/* Team Grid */}
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
-                    {/* Team Member 1 Card */}
                     <div class="team-member-card text-center bg-gray-50 p-8 rounded-xl shadow-sm">
                         <img loading="lazy" decoding="async" src="https://placehold.co/200x200/CBD5E1/475569?text=Team+1" alt="[Founder Name]" class="w-32 h-32 rounded-full mx-auto mb-5 object-cover shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/200x200/CBD5E1/FFFFFF?text=APG';">
                         <h3 class="text-xl font-semibold text-gray-900 mb-1">[Founder/Lead Name]</h3>
                         <p class="text-blue-600 font-medium text-sm mb-3">[Job Title - e.g., Founder & Principal Photographer]</p>
                         <p class="text-gray-600 text-sm mb-4">[Short bio highlighting expertise, experience, key specializations, perhaps AGSVA clearance if applicable.]</p>
-                        {/* Social Links */}
                         <div class="flex justify-center space-x-3">
-                            <a href="#linkedin-link-1" aria-label="[Founder Name] LinkedIn Profile" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-linkedin"></use></svg></a> {/* Updated href */}
-                            <a href="mailto:[founder-email@example.com]" aria-label="Email [Founder Name]" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-mail"></use></svg></a> {/* Updated href */}
+                            <a href="#linkedin-link-1" aria-label="[Founder Name] LinkedIn Profile" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-linkedin"></use></svg></a> 
+                            <a href="mailto:[founder-email@example.com]" aria-label="Email [Founder Name]" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-mail"></use></svg></a> 
                         </div>
                     </div>
 
-                    {/* Team Member 2 Card */}
                     <div class="team-member-card text-center bg-gray-50 p-8 rounded-xl shadow-sm">
                         <img loading="lazy" decoding="async" src="https://placehold.co/200x200/CBD5E1/475569?text=Team+2" alt="[Team Member Name]" class="w-32 h-32 rounded-full mx-auto mb-5 object-cover shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/200x200/CBD5E1/FFFFFF?text=APG';">
                         <h3 class="text-xl font-semibold text-gray-900 mb-1">[Team Member Name]</h3>
                         <p class="text-blue-600 font-medium text-sm mb-3">[Job Title - e.g., Senior Photographer / Videographer]</p>
                         <p class="text-gray-600 text-sm mb-4">[Short bio - focus on their specific skills, areas of focus (e.g., weddings, video editing), years of experience.]</p>
                          <div class="flex justify-center space-x-3">
-                             <a href="#linkedin-link-2" aria-label="[Team Member Name] LinkedIn Profile" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-linkedin"></use></svg></a> {/* Updated href */}
-                             {/* Add email if appropriate */}
+                             <a href="#linkedin-link-2" aria-label="[Team Member Name] LinkedIn Profile" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-linkedin"></use></svg></a> 
                          </div>
                     </div>
 
-                    {/* Team Member 3 Card */}
                     <div class="team-member-card text-center bg-gray-50 p-8 rounded-xl shadow-sm">
                         <img loading="lazy" decoding="async" src="https://placehold.co/200x200/CBD5E1/475569?text=Team+3" alt="[Team Member Name]" class="w-32 h-32 rounded-full mx-auto mb-5 object-cover shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/200x200/CBD5E1/FFFFFF?text=APG';">
                         <h3 class="text-xl font-semibold text-gray-900 mb-1">[Team Member Name]</h3>
                         <p class="text-blue-600 font-medium text-sm mb-3">[Job Title - e.g., Studio Manager / Client Relations]</p>
                         <p class="text-gray-600 text-sm mb-4">[Short bio - focus on their role in client communication, project management, administration.]</p>
                           <div class="flex justify-center space-x-3">
-                               <a href="mailto:[manager-email@example.com]" aria-label="Email [Team Member Name]" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-mail"></use></svg></a> {/* Updated href */}
-                               {/* Add LinkedIn if appropriate */}
+                               <a href="mailto:[manager-email@example.com]" aria-label="Email [Team Member Name]" class="text-gray-500 hover:text-blue-700 transition duration-300"><svg class="w-5 h-5 fill-current"><use href="#icon-mail"></use></svg></a> 
                           </div>
                     </div>
-                     {/* Add more team members as needed using the same structure */}
                 </div>
             </div>
         </section>
-        {/* --- End Meet the Team Section --- */}
 
-        {/* --- Call to Action Section --- */}
         <section class="py-20 md:py-28 bg-gray-800 text-white fade-in-section">
              <div class="container mx-auto px-4 sm:px-6 text-center">
                  <h2 class="text-3xl md:text-4xl font-bold mb-6">Work With Us</h2>
                  <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Ready to elevate your brand or capture your special day? Let's start the conversation.</p>
                  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                     {/* Primary CTA */}
                      <a href="contact.html" class="w-full sm:w-auto px-10 py-3 rounded-lg text-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500">Contact Us Today</a>
-                     {/* Secondary CTA */}
                      <a href="portfolio.html" class="w-full sm:w-auto px-10 py-3 rounded-lg text-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 bg-white text-blue-700 hover:bg-gray-200 focus:ring-blue-300">View Our Portfolio</a>
                  </div>
              </div>
         </section>
-        {/* --- End Call to Action Section --- */}
 
     </main>
 
-    {/* --- Footer Section --- */}
     <footer class="bg-gray-900 text-gray-400 pt-16 pb-12">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-                {/* Footer Column 1: Brand Info */}
                  <div class="md:col-span-2 lg:col-span-1">
                      <h4 class="text-xl font-bold text-white mb-3">Apex<span class="text-blue-500">Photo</span>Group</h4>
                      <p class="text-sm mb-4 leading-relaxed">Elite Visual Solutions. Adelaide Based, Nationally Focused.</p>
-                      {/* Social Links */}
                       <div class="flex space-x-4">
-                          {/* Replace # with actual links */}
-                          <a href="#" aria-label="LinkedIn Profile" class="text-gray-400 hover:text-blue-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-linkedin"></use></svg></a> {/* Updated href */}
-                          <a href="#" aria-label="Instagram Profile" class="text-gray-400 hover:text-pink-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-pink-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-instagram"></use></svg></a> {/* Updated href */}
-                           <a href="#" aria-label="Vimeo Profile" class="text-gray-400 hover:text-blue-300 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-300 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-vimeo"></use></svg></a> {/* Updated href */}
+                          <a href="#" aria-label="LinkedIn Profile" class="text-gray-400 hover:text-blue-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-linkedin"></use></svg></a> 
+                          <a href="#" aria-label="Instagram Profile" class="text-gray-400 hover:text-pink-400 transition duration-300 focus:outline-none focus:ring-1 focus:ring-pink-400 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-instagram"></use></svg></a> 
+                           <a href="#" aria-label="Vimeo Profile" class="text-gray-400 hover:text-blue-300 transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-300 rounded p-1 -m-1"><svg class="w-6 h-6 fill-current"><use href="#icon-vimeo"></use></svg></a> 
                       </div>
                  </div>
-                {/* Footer Column 2: Quick Links */}
                  <div>
                      <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Quick Links</h5>
                      <ul class="space-y-2 text-sm">
@@ -347,7 +294,6 @@
                          <li><a href="contact.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Contact</a></li>
                      </ul>
                  </div>
-                {/* Footer Column 3: Specializations */}
                  <div>
                      <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Specializations</h5>
                      <ul class="space-y-2 text-sm">
@@ -359,36 +305,31 @@
                          <li><a href="luxury-weddings.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Weddings</a></li>
                      </ul>
                  </div>
-                {/* Footer Column 4: Contact Info */}
                  <div>
                      <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Get In Touch</h5>
                      <address class="not-italic text-sm space-y-2">
                          {/* Replace placeholders with actual contact details */}
-                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-phone"></use></svg><a href="tel:+61XXXXXXXXX" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">+61 X XXXX XXXX</a></p> {/* Updated href */}
-                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-mail"></use></svg><a href="mailto:info@apexphotogroup.com.au" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">info@apexphotogroup.com.au</a></p> {/* Updated href */}
-                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-location"></use></svg>123 Example Street<br><span class="ml-6">Adelaide, SA 5000</span></p> {/* Updated href */}
+                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-phone"></use></svg><a href="tel:+61XXXXXXXXX" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">+61 X XXXX XXXX</a></p> 
+                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-mail"></use></svg><a href="mailto:info@apexphotogroup.com.au" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">info@apexphotogroup.com.au</a></p> 
+                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use href="#icon-location"></use></svg>123 Example Street<br><span class="ml-6">Adelaide, SA 5000</span></p> 
+                        
                      </address>
                  </div>
             </div>
-            {/* Copyright and Legal Links */}
             <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
                 <p>© <span id="current-year"></span> Apex Photography Group. All Rights Reserved.</p>
                 <p class="mt-2">
-                    {/* Replace # with actual links */}
                     <a href="#" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Privacy Policy</a> |
                     <a href="#" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Terms of Service</a>
                 </p>
             </div>
         </div>
     </footer>
-    {/* --- End Footer Section --- */}
 
-    {/* --- Back to Top Button --- */}
     <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900">
-        <svg class="w-5 h-5 fill-none stroke-current"><use href="#icon-arrow-up"></use></svg> {/* Updated href */}
+        <svg class="w-5 h-5 fill-none stroke-current"><use href="#icon-arrow-up"></use></svg> 
     </button>
 
-    {/* --- JavaScript Section --- */}
     <script>
         // --- DOM Element References ---
         const header = document.getElementById('main-header');
