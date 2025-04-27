@@ -16,7 +16,6 @@
 </head>
 <body class="antialiased bg-gray-100 text-gray-800">
 
-    {/* SVG Symbol Definitions (Include Tech icons) */}
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></symbol>
         <symbol id="icon-menu" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></symbol>
@@ -27,7 +26,6 @@
         <symbol id="icon-phone" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></symbol>
         <symbol id="icon-mail" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></symbol>
         <symbol id="icon-location" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></symbol>
-        {/* Technology Icons */}
         <symbol id="icon-chip" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M15 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2zM5 4a1 1 0 011-1h8a1 1 0 011 1v1H5V4zm0 12V7h10v9a1 1 0 01-1 1H6a1 1 0 01-1-1zm5-5a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" /><path d="M7 9a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zm0 4a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zM5 7H3v2h2V7zm0 4H3v2h2v-2zm12-4h-2v2h2V7zm0 4h-2v2h2v-2z" /></symbol>
         <symbol id="icon-light-bulb" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.017a4.98 4.98 0 014.836 4.484l.003.018.01.052a4.5 4.5 0 01-1.84 5.073 4.502 4.502 0 01-6.018 0 4.5 4.5 0 01-1.84-5.073l.01-.052.004-.018A4.98 4.98 0 019 4.017V3a1 1 0 011-1zm0 8a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM10 18a.5.5 0 01-.5-.5v-1a.5.5 0 011 0v1a.5.5 0 01-.5.5zM6 17a.5.5 0 01-.354-.146l-.707-.707a.5.5 0 01.707-.707l.707.707A.5.5 0 016 17zm8 0a.5.5 0 01-.354.146l-.707-.707a.5.5 0 01.707-.707l.707.707A.5.5 0 0114 17z" clip-rule="evenodd" /></symbol>
         <symbol id="icon-code" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 11.5a1 1 0 01-1.898-.65L11.684 3.7a1 1 0 011.265-.649zM6.293 6.293a1 1 0 011.414 0L12 10.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z" clip-rule="evenodd" /></symbol>
@@ -39,7 +37,6 @@
             <div class="hidden lg:flex space-x-7 items-center">
                 <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Home</a>
                 <div class="relative group">
-                    {/* Highlight B2B Services as parent section */}
                     <a href="b2b-services.html" aria-haspopup="true" aria-expanded="false" class="text-blue-600 hover:text-blue-700 transition duration-300 font-medium focus:outline-none flex items-center">
                         B2B Services
                         <svg class="w-4 h-4 ml-1 text-blue-500 group-hover:text-blue-700 transition-transform duration-200 group-hover:rotate-180 fill-none stroke-current"><use xlink:href="#icon-chevron-down"></use></svg>
@@ -47,7 +44,6 @@
                     <div role="menu" class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100 invisible group-hover:visible z-20 origin-top-left">
                         <div class="py-1" role="none">
                             <a href="b2b-defence.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-t-md">Defence</a>
-                            {/* Highlight current page within dropdown */}
                             <a href="b2b-tech.html" role="menuitem" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 hover:bg-blue-100">Technology</a>
                             <a href="b2b-industrial.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Industrial</a>
                             <a href="b2b-aerospace.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Aerospace</a>
@@ -73,7 +69,6 @@
                  <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Home</a>
                  <span class="block px-3 pt-3 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">B2B Services</span>
                  <a href="b2b-defence.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Defence</a>
-                 {/* Highlight current page in mobile */}
                  <a href="b2b-tech.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Technology</a>
                  <a href="b2b-industrial.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Industrial</a>
                  <a href="b2b-aerospace.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Aerospace</a>
@@ -123,7 +118,6 @@
                     </div>
                 </div>
 
-                {/* Key Considerations Section */}
                  <div class="bg-gray-100 p-8 rounded-xl shadow-md mb-16">
                      <h3 class="text-2xl md:text-3xl font-semibold mb-6 text-center text-gray-800">Precision & Clarity Focused</h3>
                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,7 +129,7 @@
                              </div>
                          </div>
                           <div class="flex items-start space-x-3">
-                             <svg class="w-6 h-6 text-indigo-600 fill-current flex-shrink-0 mt-1"><use xlink:href="#icon-lock-closed"></use></svg> {/* Using lock for IP sensitivity */}
+                             <svg class="w-6 h-6 text-indigo-600 fill-current flex-shrink-0 mt-1"><use xlink:href="#icon-lock-closed"></use></svg> 
                              <div>
                                  <h4 class="text-lg font-semibold text-gray-700 mb-1">IP Sensitivity Aware</h4>
                                  <p class="text-sm text-gray-600">Understanding the importance of intellectual property and working discreetly within sensitive R&D environments.</p>
@@ -151,12 +145,9 @@
                      </div>
                  </div>
 
-                {/* Case Studies Section */}
                 <div class="mt-16 pt-10 border-t border-gray-200">
                     <h3 class="text-2xl md:text-3xl font-semibold mb-10 text-center text-gray-800">Technology Sector Case Studies</h3>
-                    {/* TODO: Implement full Case Study pages/modals and link from here */}
                     <div class="space-y-12">
-                        {/* Placeholder Case Study 1 */}
                         <div class="grid md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-lg shadow-lg">
                             <div class="md:col-span-1">
                                 <img loading="lazy" decoding="async" src="https://placehold.co/600x400/E0F2FE/075985?text=Replace+Tech+Case+Study+1" alt="Technology Case Study Example 1" class="rounded-md w-full h-auto object-cover" onerror="this.style.display='none';">
@@ -170,25 +161,20 @@
                                 <a href="#[Link-To-Full-Case-Study-Tech-1]" class="text-sm text-indigo-600 hover:underline font-semibold">View Full Project Details →</a>
                             </div>
                         </div>
-                        {/* Add more tech case studies */}
                     </div>
                 </div>
 
-                 {/* Related Portfolio Snippets */}
                  <div class="mt-16 pt-10 border-t border-gray-200">
                     <h3 class="text-2xl md:text-3xl font-semibold mb-10 text-center text-gray-800">Related Technology Portfolio</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                         {/* Placeholder Snippet 1 */}
                          <div class="portfolio-item group overflow-hidden rounded-xl shadow-lg hover-lift relative">
                              <img loading="lazy" decoding="async" src="https://placehold.co/600x450/DBEAFE/1E40AF?text=Replace+Tech+Portfolio+1" alt="Technology Portfolio Example 1" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none';">
                              <a href="portfolio.html#item-b2b-tech-1" class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded-xl" aria-label="View Tech Project 1"><span class="text-white text-lg font-semibold pointer-events-none">View Project</span></a>
                          </div>
-                          {/* Placeholder Snippet 2 */}
                          <div class="portfolio-item group overflow-hidden rounded-xl shadow-lg hover-lift relative">
                              <img loading="lazy" decoding="async" src="https://placehold.co/600x450/DBEAFE/1E40AF?text=Replace+Tech+Portfolio+2" alt="Technology Portfolio Example 2" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none';">
                              <a href="portfolio.html#item-b2b-tech-2" class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded-xl" aria-label="View Tech Project 2"><span class="text-white text-lg font-semibold pointer-events-none">View Project</span></a>
                          </div>
-                         {/* Add more portfolio snippets */}
                     </div>
                      <div class="text-center mt-12">
                         <a href="portfolio.html?filter=tech" class="inline-block bg-gray-700 text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-gray-800 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">View Full Technology Portfolio</a>
@@ -199,11 +185,9 @@
 
     </main>
 
-    {/* Footer (Same as index.html) */}
     <footer class="bg-gray-900 text-gray-400 pt-16 pb-12">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-                {/* Footer Content Columns (Identical to index.html) */}
                  <div class="md:col-span-2 lg:col-span-1">
                     <h4 class="text-xl font-bold text-white mb-3">Apex<span class="text-blue-500">Photo</span>Group</h4>
                     <p class="text-sm mb-4 leading-relaxed">Elite Visual Solutions. Adelaide Based, Nationally Focused.</p>
@@ -253,7 +237,7 @@
         </div>
     </footer>
 
-    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900"> {/* Changed color */}
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900"> 
         <svg class="w-5 h-5 fill-none stroke-current"><use xlink:href="#icon-arrow-up"></use></svg>
     </button>
 
