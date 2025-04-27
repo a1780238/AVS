@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {/* --- Meta Description for Terms of Service --- */}
     <meta name="description" content="Terms of Service for using the Apex Photography Group website (https://a1780238.github.io/AVS/index.html) and engaging our photography and videography services.">
     <meta name="keywords" content="terms of service, terms and conditions, website terms, service agreement, Apex Photography Group terms">
-    {/* --- Title for Terms of Service --- */}
     <title>Terms of Service | Apex Photography Group</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +26,6 @@
 </head>
 <body class="antialiased bg-gray-100 text-gray-800">
 
-    {/* SVG Symbol Definitions (Same as index.html) */}
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></symbol>
         <symbol id="icon-menu" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></symbol>
@@ -71,7 +68,6 @@
                 </button>
             </div>
         </nav>
-        {/* Mobile Menu - No specific highlight for policy page */}
         <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200 absolute top-full left-0 w-full z-40 shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Home</a>
@@ -93,14 +89,12 @@
     </header>
 
     <main>
-        {/* Page Title Section */}
         <section class="bg-gray-700 py-12 md:py-16 text-white fade-in-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center">Terms of Service</h1>
             </div>
         </section>
 
-        {/* Terms of Service Content Section */}
         <section id="terms-content" class="py-16 md:py-20 bg-white fade-in-section">
             <div class="container mx-auto px-4 sm:px-6 max-w-4xl text-gray-700">
 
@@ -150,7 +144,6 @@
                 <p>If you have any questions regarding these Terms, please contact:</p>
                 <address class="not-italic mb-4">
                     <strong>Apex Photography Group</strong><br>
-                    {/* --- !!! REPLACE WITH YOUR ACTUAL DETAILS !!! --- */}
                     <strong>Attn: Terms and Conditions Officer</strong><br>
                     [123 Example Street]<br>
                     [Adelaide, SA 5000], Australia<br>
@@ -166,7 +159,6 @@
         </section>
     </main>
 
-    {/* Footer (Same as index.html - Ensure placeholders are updated here too) */}
     <footer class="bg-gray-900 text-gray-400 pt-16 pb-12">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
@@ -206,7 +198,6 @@
                 <div>
                     <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Get In Touch</h5>
                     <address class="not-italic text-sm space-y-2">
-                         {/* --- !!! REPLACE FOOTER CONTACT INFO !!! --- */}
                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-phone"></use></svg><a href="tel:[+618...]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">[Your Phone Number]</a></p>
                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-mail"></use></svg><a href="mailto:[info@apexphotogroup.com.au]" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">[Your Email Address]</a></p>
                         <p><svg class="inline w-4 h-4 mr-2 opacity-70 fill-current"><use xlink:href="#icon-location"></use></svg>[Your Street Address]<br><span class="ml-6">Adelaide, SA [Postcode]</span></p>
@@ -215,7 +206,6 @@
             </div>
             <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
                 <p>© <span id="current-year"></span> Apex Photography Group. All Rights Reserved.</p>
-                 {/* --- Ensure these links are correct --- */}
                 <p class="mt-2"><a href="privacy-policy.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Privacy Policy</a> | <a href="terms-of-service.html" class="hover:text-white transition duration-300 focus:outline-none focus:ring-1 focus:ring-blue-400 rounded px-1 -mx-1">Terms of Service</a></p>
             </div>
         </div>
@@ -225,7 +215,6 @@
         <svg class="w-5 h-5 fill-none stroke-current"><use xlink:href="#icon-arrow-up"></use></svg>
     </button>
 
-    {/* JavaScript (Same core functionality as index.html) */}
     <script>
         const header=document.getElementById("main-header"),mobileMenuButton=document.getElementById("mobile-menu-button"),mobileMenuElement=document.getElementById("mobile-menu"),backToTopButton=document.getElementById("back-to-top");function debounce(t,e){let o;return function(...n){const i=()=>{clearTimeout(o),t(...n)};clearTimeout(o),o=setTimeout(i,e)}}function toggleMobileMenu(){if(!mobileMenuElement||!mobileMenuButton)return;const t=!mobileMenuElement.classList.toggle("hidden");mobileMenuButton.setAttribute("aria-expanded",String(t))}function smoothScrollToTarget(t){try{const e=document.querySelector(t);if(e){const o=header?.offsetHeight||70,n=e.getBoundingClientRect().top+window.pageYOffset,s=n-o-20;window.scrollTo({top:s,behavior:"smooth"}),mobileMenuElement&&!mobileMenuElement.classList.contains("hidden")&&toggleMobileMenu()}}catch(t){console.error(`Smooth scroll error: ${t}`)}}const handleScroll=debounce(()=>{if(!backToTopButton)return;const t=window.pageYOffset>300;backToTopButton.classList.toggle("opacity-0",!t),backToTopButton.classList.toggle("pointer-events-none",!t),backToTopButton.classList.toggle("opacity-100",t)},150);function setupIntersectionObserver(){const t=document.querySelectorAll(".fade-in-section");if(!t.length||"undefined"==typeof IntersectionObserver)return;const e=new IntersectionObserver(t=>{t.forEach(t=>{t.isIntersecting&&t.target.classList.add("visible")})},{threshold:.1});t.forEach(t=>e.observe(t))}function addEventListeners(){mobileMenuButton?.addEventListener("click",toggleMobileMenu),backToTopButton?.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"})),window.addEventListener("scroll",handleScroll),mobileMenuElement?.querySelectorAll("a").forEach(t=>{t.addEventListener("click",()=>{mobileMenuElement.classList.contains("hidden")||toggleMobileMenu()})});const t=document.getElementById("current-year");t&&(t.textContent=(new Date).getFullYear()),document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(t=>{t.addEventListener("click",function(e){const o=this.getAttribute("href");o&&o.startsWith("#")&&(e.preventDefault(),smoothScrollToTarget(o))})})}function init(){addEventListeners(),setupIntersectionObserver(),handleScroll()}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",init):init();
     </script>
