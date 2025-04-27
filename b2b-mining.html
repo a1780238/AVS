@@ -16,7 +16,6 @@
 </head>
 <body class="antialiased bg-gray-100 text-gray-800">
 
-    {/* SVG Symbol Definitions (Include Mining/Resources icons) */}
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></symbol>
         <symbol id="icon-menu" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></symbol>
@@ -27,7 +26,6 @@
         <symbol id="icon-phone" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></symbol>
         <symbol id="icon-mail" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></symbol>
         <symbol id="icon-location" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></symbol>
-        {/* Mining Icons */}
         <symbol id="icon-mining-cart" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 16V6h16v10H4zm2-3h2v-2H6v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2z"/></symbol> {/* Simplified cart */}
         <symbol id="icon-globe" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 7.973 5 10 5c.203 0 .405.007.603.021a1.99 1.99 0 01.842 3.789l.01.004a6.03 6.03 0 01-4.13 4.13l-.004-.01a1.99 1.99 0 01-3.789-.842A6.01 6.01 0 014.332 8.027zm1.08.973a4.006 4.006 0 004.49 4.49l.008-.004a1.99 1.99 0 11-2.264-2.263l-.004.008zm6.095-3.433a1.99 1.99 0 11-2.264-2.264l.004.008a4.006 4.006 0 004.49-4.49l.008.004a1.99 1.99 0 112.264 2.264l-.008-.004z" clip-rule="evenodd" /></symbol>
         <symbol id="icon-shield-check" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.002L10 18.451l7.834-13.449A11.954 11.954 0 0110 1.944zM9 13l-3-3 1.41-1.41L9 10.17l4.59-4.59L15 7l-6 6z" clip-rule="evenodd" /></symbol>
@@ -39,7 +37,6 @@
             <div class="hidden lg:flex space-x-7 items-center">
                 <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Home</a>
                 <div class="relative group">
-                    {/* Highlight B2B Services as parent section */}
                     <a href="b2b-services.html" aria-haspopup="true" aria-expanded="false" class="text-blue-600 hover:text-blue-700 transition duration-300 font-medium focus:outline-none flex items-center">
                         B2B Services
                         <svg class="w-4 h-4 ml-1 text-blue-500 group-hover:text-blue-700 transition-transform duration-200 group-hover:rotate-180 fill-none stroke-current"><use xlink:href="#icon-chevron-down"></use></svg>
@@ -50,7 +47,6 @@
                             <a href="b2b-tech.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Technology</a>
                             <a href="b2b-industrial.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Industrial</a>
                             <a href="b2b-aerospace.html" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Aerospace</a>
-                             {/* Highlight current page within dropdown */}
                             <a href="b2b-mining.html" role="menuitem" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-b-md">Mining</a>
                         </div>
                     </div>
@@ -76,7 +72,6 @@
                  <a href="b2b-tech.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Technology</a>
                  <a href="b2b-industrial.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Industrial</a>
                  <a href="b2b-aerospace.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Aerospace</a>
-                  {/* Highlight current page in mobile */}
                  <a href="b2b-mining.html" class="block pl-6 pr-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Mining</a>
                   <span class="block px-3 pt-3 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">Other Services</span>
                  <a href="luxury-weddings.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition duration-150 ease-in-out">Weddings</a>
@@ -123,7 +118,6 @@
                     </div>
                 </div>
 
-                {/* Key Considerations Section */}
                  <div class="bg-gray-100 p-8 rounded-xl shadow-md mb-16">
                      <h3 class="text-2xl md:text-3xl font-semibold mb-6 text-center text-gray-800">Safety & Site Expertise Focused</h3>
                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,7 +129,7 @@
                              </div>
                          </div>
                           <div class="flex items-start space-x-3">
-                             <svg class="w-6 h-6 text-orange-600 fill-current flex-shrink-0 mt-1"><use xlink:href="#icon-location"></use></svg> {/* Using location for remote sites */}
+                             <svg class="w-6 h-6 text-orange-600 fill-current flex-shrink-0 mt-1"><use xlink:href="#icon-location"></use></svg> 
                              <div>
                                  <h4 class="text-lg font-semibold text-gray-700 mb-1">Remote Operations Capable</h4>
                                  <p class="text-sm text-gray-600">Experience and logistical capability to operate effectively in remote and regional mine locations.</p>
@@ -151,12 +145,9 @@
                      </div>
                  </div>
 
-                {/* Case Studies Section */}
                 <div class="mt-16 pt-10 border-t border-gray-200">
                     <h3 class="text-2xl md:text-3xl font-semibold mb-10 text-center text-gray-800">Mining Sector Case Studies</h3>
-                    {/* TODO: Implement full Case Study pages/modals and link from here */}
                     <div class="space-y-12">
-                        {/* Placeholder Case Study 1 */}
                         <div class="grid md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-lg shadow-lg">
                             <div class="md:col-span-1">
                                 <img loading="lazy" decoding="async" src="https://placehold.co/600x400/FEF3C7/B45309?text=Replace+Mining+Case+Study+1" alt="Mining Case Study Example 1" class="rounded-md w-full h-auto object-cover" onerror="this.style.display='none';">
@@ -170,25 +161,20 @@
                                 <a href="#[Link-To-Full-Case-Study-Mine-1]" class="text-sm text-orange-600 hover:underline font-semibold">View Full Project Details →</a>
                             </div>
                         </div>
-                        {/* Add more mining case studies */}
                     </div>
                 </div>
 
-                 {/* Related Portfolio Snippets */}
                  <div class="mt-16 pt-10 border-t border-gray-200">
                     <h3 class="text-2xl md:text-3xl font-semibold mb-10 text-center text-gray-800">Related Mining Portfolio</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                         {/* Placeholder Snippet 1 */}
                          <div class="portfolio-item group overflow-hidden rounded-xl shadow-lg hover-lift relative">
                              <img loading="lazy" decoding="async" src="https://placehold.co/600x450/FEF9C3/92400E?text=Replace+Mining+Portfolio+1" alt="Mining Portfolio Example 1" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none';">
                              <a href="portfolio.html#item-b2b-mine-1" class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded-xl" aria-label="View Mining Project 1"><span class="text-white text-lg font-semibold pointer-events-none">View Project</span></a>
                          </div>
-                          {/* Placeholder Snippet 2 */}
                          <div class="portfolio-item group overflow-hidden rounded-xl shadow-lg hover-lift relative">
                              <img loading="lazy" decoding="async" src="https://placehold.co/600x450/FEF9C3/92400E?text=Replace+Mining+Portfolio+2" alt="Mining Portfolio Example 2" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none';">
                              <a href="portfolio.html#item-b2b-mine-2" class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded-xl" aria-label="View Mining Project 2"><span class="text-white text-lg font-semibold pointer-events-none">View Project</span></a>
                          </div>
-                         {/* Add more portfolio snippets */}
                     </div>
                      <div class="text-center mt-12">
                         <a href="portfolio.html?filter=mining" class="inline-block bg-gray-700 text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-gray-800 transition duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">View Full Mining Portfolio</a>
@@ -199,11 +185,9 @@
 
     </main>
 
-    {/* Footer (Same as index.html) */}
     <footer class="bg-gray-900 text-gray-400 pt-16 pb-12">
         <div class="container mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-                {/* Footer Content Columns (Identical to index.html) */}
                  <div class="md:col-span-2 lg:col-span-1">
                     <h4 class="text-xl font-bold text-white mb-3">Apex<span class="text-blue-500">Photo</span>Group</h4>
                     <p class="text-sm mb-4 leading-relaxed">Elite Visual Solutions. Adelaide Based, Nationally Focused.</p>
@@ -253,7 +237,7 @@
         </div>
     </footer>
 
-    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-orange-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-gray-900"> {/* Changed color */}
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 bg-orange-600 text-white p-3 rounded-full shadow-lg hover:bg-orange-700 transition-all duration-300 opacity-0 pointer-events-none z-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-gray-900"> 
         <svg class="w-5 h-5 fill-none stroke-current"><use xlink:href="#icon-arrow-up"></use></svg>
     </button>
 
